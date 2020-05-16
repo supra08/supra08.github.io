@@ -18,6 +18,11 @@
   </url>
   
   <url>
+    <loc>/tags/cloud/</loc>
+    <lastmod>2014-05-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/gasper-part-1/</loc>
     <lastmod>2014-05-16T00:00:00+00:00</lastmod>
   </url>
@@ -28,7 +33,12 @@
   </url>
   
   <url>
-    <loc>/tags/golang/</loc>
+    <loc>/tags/microservices/</loc>
+    <lastmod>2014-05-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/paas/</loc>
     <lastmod>2014-05-16T00:00:00+00:00</lastmod>
   </url>
   

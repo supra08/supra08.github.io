@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>cloud</title>
+      <link>/tags/cloud/</link>
+      <pubDate>Fri, 16 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>go</title>
       <link>/tags/go/</link>
       <pubDate>Fri, 16 May 2014 00:00:00 +0000</pubDate>
@@ -21,11 +30,20 @@
     </item>
     
     <item>
-      <title>golang</title>
-      <link>/tags/golang/</link>
+      <title>microservices</title>
+      <link>/tags/microservices/</link>
       <pubDate>Fri, 16 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>/tags/golang/</guid>
+      <guid>/tags/microservices/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PaaS</title>
+      <link>/tags/paas/</link>
+      <pubDate>Fri, 16 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/paas/</guid>
       <description></description>
     </item>
     

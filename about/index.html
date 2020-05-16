@@ -48,10 +48,10 @@
         
         
         <nav id="nav-items" class="nav-item level is-mobile">
-          <a class="level-item" aria-label="resume" href="/resume.pdf" rel='noopener'>Resume</a>
+          <a class="level-item" aria-label="resume" href="/resume.pdf" rel='noopener'><h1 class="is-1">Resume</h1></a>
           <a class="level-item" aria-label="about" href='/about'
            rel='noopener'>
-           About 
+           <h1 class="is-1">About</h1> 
           
           <a class="level-item" aria-label="email" href='mailto:rick.das08@gmail.com'
            target='_blank'  rel='noopener'>
@@ -136,7 +136,7 @@
 <p>On campus, I am a part of a group, <a href="https://sdslabs.co/">SDSLabs</a>, whose members are constantly developing awesome softwares and fostering technical activities and innovation on the campus. I am also a part of <a href="https://infoseciitr.in/">InfosecIITR</a>, a group of individuals who participate in CTFs (read cybersecurity competitions) and propagate cybersecurity knowledge in general.</p>
 <p>Ah so you made it! The one last round and you can leave this page :P</p>
 <p>So apart from software development and websec, the other thing I am really passionate about is music, especially guitars. I like experimenting with them and composing mini riffs and pieces. I am a basketball and snooker fan (and I do play too, at least the latter) and have quite been into room escape puzzles.</p>
-<p>Check out my <a href="/">blog posts</a> and my <a href="/resume.pdf">resume</a>.</p>
+<p>Check out my <a href="/blog/">blog posts</a> and my <a href="/resume.pdf">resume</a>.</p>
 
 </div>
         
@@ -147,38 +147,22 @@
 
 
 
+
 <section class="section">
   <div class="container">
     <aside><div id="disqus_thread"></div></aside>
-  
-    <div id="show_comments"><a id="load_comments" class="button is-link">Load comments</a></div>
-  
-    <script type="text/javascript">
-      var disqus_shortname = 'shortname';
-      function disqus() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      }
-  
-      
-      var hash = window.location.hash.substr(1);
-      if ((hash.length > 8) && (hash.substring(0, 8) === "comment-")) {
-        disqus();
-        document.getElementById("show_comments").style.display = "none";
-      } else {
-        document.getElementById('load_comments').onclick = function() {
-          disqus();
-          document.getElementById("show_comments").style.display = "none";
-        };
-      }
-  
-
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
   </div>
 </section>
 
+<script>
+(function() {
+var d = document, s = d.createElement('script');
+s.src = 'https://supratikdas.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 
 <section class="section">
