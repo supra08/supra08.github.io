@@ -12,15 +12,6 @@
     
     
     <item>
-      <title>development</title>
-      <link>/tags/development/</link>
-      <pubDate>Fri, 16 May 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>go</title>
       <link>/tags/go/</link>
       <pubDate>Fri, 16 May 2014 00:00:00 +0000</pubDate>
@@ -35,24 +26,6 @@
       <pubDate>Fri, 16 May 2014 00:00:00 +0000</pubDate>
       
       <guid>/tags/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>templates</title>
-      <link>/tags/templates/</link>
-      <pubDate>Fri, 16 May 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/templates/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>themes</title>
-      <link>/tags/themes/</link>
-      <pubDate>Fri, 16 May 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/themes/</guid>
       <description></description>
     </item>
     
