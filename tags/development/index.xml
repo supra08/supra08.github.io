@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>development on Supratik Das</title>
+    <link>/tags/development/</link>
+    <description>Recent content in development on Supratik Das</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 16 May 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gasper Part 1</title>
+      <link>/blog/gasper-part-1/</link>
+      <pubDate>Fri, 16 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/gasper-part-1/</guid>
+      <description>This blog is a cross post from the SDSLabs blog post and is Part 1 of a series. It gives an idea of Gasper’s architecture, technical stack, and capabilities. The subsequent parts cover the detailed discussion of its various components.
+Introduction Providing simplicity without letting go of the necessities in deployments has always been a bottleneck for PaaS providers. Imagine you have a couple of Bare-Metal servers or Virtual Machines at your disposal (collectively called here as nodes) and you wanted to setup an application hosting service, such that the load is evenly distributed among all nodes.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,290 @@
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en">
+
+    <head>
+
+        
+        <meta charset="UTF-8" />
+
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+                
+        <title> 
+             Gasper Part 1  
+        </title>
+        
+        
+            <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Supratik Das" />
+        
+
+        
+        <link rel="stylesheet" href="/css/style.css"/>
+
+        
+        
+            <link rel='stylesheet' href='/css/custom.css'>
+        
+        
+    </head>
+
+    <body>
+
+
+
+<section class="section">
+  <div class="container">
+    <nav id="nav-main" class="nav">
+      <div id="nav-name" class="nav-left">
+        <a id="nav-anchor" class="nav-item" href="/">
+          
+          <div class="title-image">
+            <img src="/images/mav3rick.png" alt="title image">
+          </div>
+          
+        </a>
+      </div>
+      <div class="nav-right">
+        
+        
+        <nav id="nav-items" class="nav-item level is-mobile">
+          <a class="level-item" aria-label="resume" href="/resume.pdf" rel='noopener'>Resume</a>
+          <a class="level-item" aria-label="about" href='/about'
+           rel='noopener'>
+           About 
+          
+          <a class="level-item" aria-label="email" href='mailto:rick.das08@gmail.com'
+           target='_blank'  rel='noopener'>
+          
+            <span class="icon">
+              <i class>
+
+<svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+    <polyline points="22,6 12,13 2,6"/>
+    
+  </svg></i>
+            </span>
+          </a>
+          <a class="level-item" aria-label="github" href='https://github.com/supra08'
+           target='_blank'  rel='noopener'>
+          
+            <span class="icon">
+              <i class>
+
+<svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+    
+  </svg></i>
+            </span>
+          </a>
+          <a class="level-item" aria-label="twitter" href='https://twitter.com/@supratik_08'
+           target='_blank'  rel='noopener'>
+          
+            <span class="icon">
+              <i class>
+
+<svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+    
+  </svg></i>
+            </span>
+          </a>
+          <a class="level-item" aria-label="rss" href='/supradeux.xml'
+           target='_blank'  rel='noopener'>
+          
+            <span class="icon">
+              <i class>
+
+<svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    <path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle>
+    
+  </svg></i>
+            </span>
+          </a></nav>
+        
+      
+      </div>
+    </nav>
+
+    <nav class="nav">
+      
+
+      
+    </nav>
+
+  </div>
+</section>
+
+<section class="section">
+    
+    <div class="container">
+    
+        
+            
+<div class="subtitle tags is-6 is-pulled-right">
+    
+        
+<a class="subtitle is-6" href="/tags/go/">#go</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/golang/">#golang</a>
+  
+  | <a class="subtitle is-6" href="/tags/templates/">#templates</a>
+  
+  | <a class="subtitle is-6" href="/tags/themes/">#themes</a>
+  
+  | <a class="subtitle is-6" href="/tags/development/">#development</a>
+  
+
+
+    
+</div>
+
+
+
+<h2 class="subtitle is-6">
+    
+    
+        May 16, 2014 | 00:00
+    
+</h2>
+
+
+
+<h1 class="title">Gasper Part 1</h1>
+
+<div class="content">
+
+    
+    <p><em>This blog is a cross post from the SDSLabs blog post and is Part 1 of a series. It gives an idea of Gasper’s architecture, technical stack, and capabilities. The subsequent parts cover the detailed discussion of its various components.</em></p>
+<h2 id="introduction">Introduction</h2>
+<p>Providing simplicity without letting go of the necessities in deployments has always been a bottleneck for PaaS providers. Imagine you have a couple of Bare-Metal servers or Virtual Machines at your disposal (collectively called here as nodes) and you wanted to setup an application hosting service, such that the load is evenly distributed among all nodes.</p>
+<p>Let’s face it; we have essentially two choices.</p>
+<p><em>Manually Setup Everything:</em> \<br>
+Manually decide which application goes to which node, then use ssh/telnet to manually setup all of your applications one by one.</p>
+<p><em>Kubernetes at the rescue:</em> \<br>
+Kubernetes takes away the load distribution problem with its intelligent clustering. But then again, it requires a lot (and yes a lot!) of configurations for each application. Besides, the pipeline for setting up the app still needs to be implemented.</p>
+<h4 id="gasper---a-new-hope">Gasper - A New Hope</h4>
+<p>Gasper addresses all of the above problems and makes deploying applications just a breeze. The platform is modeled as a REST API, where the user just needs to provide the Github repository’s URL, build commands and some optional configurations, click the Create button and voila, your application is deployed!</p>
+<h2 id="sounds-cool-lets-look-at-the-amazing-tale-under-the-hood">Sounds cool? Let&rsquo;s look at the amazing tale under the hood</h2>
+<h4 id="overview-of-the-architecture">Overview of the Architecture</h4>
+<p>Gasper is written entirely in Go - <a href="https://thenewstack.io/go-the-programming-language-of-the-cloud/">the language of the Cloud</a>. It essentially has a microservices-based architecture. If you don’t know already, we have multiple software design paradigms. One is the monolithic architecture, the whole application as a single unit with multiple modules. These applications lose flexibility easily and are difficult to scale. Next, we have the microservices architecture. Each module is a separate unit and interacts only with APIs. Technically, we say that we have decoupled the modules. This can be scaled easily, and each module can be designed separately.</p>
+<p>This choice of architecture was made right during the initial phase due to multiple factors. One of them being: this makes adding more modules dead simple. Suppose we need a service for internal DNS resolution. We create a separate module for that and just plug it in!
+Apart from this, as it scales and spans multiple servers, the services automatically handle the load distribution making everything a walk in the park.</p>
+<h4 id="the-microservices-in-action">The microservices in action</h4>
+<p>The journey from downloading the source code to its final deployment in Gasper involves the following microservices:</p>
+<ul>
+<li>Kaze 🌪 (the master service responsible for managing all other services)</li>
+<li>Mizu 💧(the worker service for creating/managing apps)</li>
+<li>Kaen 🔥(the worker service for creating/managing databases)</li>
+<li>Enrai ⚡️(the reverse proxy server)</li>
+<li>Hikari 💡(the service for internal DNS resolution)</li>
+<li>Iwa 🗿(the service that handles ssh into the containers)</li>
+</ul>
+<p>Now that we are done with the architecture, let’s start from the very core itself: How to package? Multiple apps in a single node or one app per node. The former just sends security on a walk, and the latter one brings about a lot of hardware overheads.</p>
+<h4 id="hre-cometh-docker">H&rsquo;re cometh Docker&hellip;</h4>
+<p>Docker is a service that deploys containers. Containers are a sort of OS-level virtualization. Docker comes with a plethora of configuration options, from limiting the allocation of CPU and Memory resources to managing security levels, and much, much more. It was a perfect solution to our problem; containers have a low resource overhead and implement isolation for configuration files and dependencies.</p>
+<p><img src="/posts/gasper-part-1/docker.jpg#c" alt="Docker"></p>
+<p>With docker containerization at its core, apps now can be packaged and built.</p>
+<h2 id="alright-lets-deploy-shall-we">Alright let&rsquo;s deploy, shall we?</h2>
+<p>The generic pipeline that Gasper follows for app deployment is as follows:</p>
+<ol>
+<li>Download the application source code</li>
+<li>Mount this source code as a volume for the container</li>
+<li>Bind the ports of the host and the container</li>
+<li>Start the docker container with this configuration</li>
+<li>Install the dependencies</li>
+<li>Fire up the application</li>
+</ol>
+<p>And hola, your application is live!</p>
+<p>Generally these build instructions are mentioned in a Dockerfile, which is quite robust per se.
+But we wanted to get rid of that nasty Dockerfile and the docker-compose heavy lifting, right? Let’s automate this pipeline.</p>
+<p>Golang’s Docker Engine library was enough to handle steps 2 through 6. Gasper has two separate microservices, <strong>Mizu</strong> and <strong>Kaen</strong>, to manage the stepwise deployment of apps and databases respectively using these library functions. More details on them are in the next blog.</p>
+<p>However, the whole process initially took a whopping 15s, even for simple boilerplate apps. We needed to optimize that.</p>
+<h4 id="go-go-go-making-thy-wrk-easy">Go, go, go… making thy w&rsquo;rk easy</h4>
+<p>Go, besides the fact that it came from Google, is famous for its efficient realization of concurrency using <a href="https://golangbot.com/goroutines/">Goroutines</a>. And there it was, we took the two slowest processes, steps 1 and 4, and put them in goroutines. The deployment times came down from ~15s to ~5.5s. Further optimizations pulled it down to 1.5s. Phew! That was fast.</p>
+<h2 id="the-final-take">The final take:</h2>
+<p>The next we have <strong>Enrai</strong>, the reverse proxy server. Among all the services, only Enrai is given a public IP and the rest of the apps are proxied through it. Laying it down simply, it is <em>a server that receives requests from clients and forwards them to the respective instances</em> (containers in our case). \<br>
+Gasper boasts an internal DNS resolution service, too, <strong>Hikari</strong>. It allots domain names to the apps and databases and maintains the DNS records, ensuring an even distribution.\</p>
+<p>A lot things coming up altogether? This diagram might ease out things:
+<img src="/posts/gasper-part-1/request-proxy.png#c" alt="request_proxy"></p>
+<p>For those who prefer a hands-on deployment experience, Gasper provides SSH into the containers along with a virtual terminal for ease. Iwa plays its role here.</p>
+<p>This marks the end of the deployment journey. The user is always able to restart/rebuild the app in case of failure, and there&rsquo;s always SSH if they want to get their hands dirty 💪.</p>
+<p><img src="/posts/gasper-part-1/work_done.jpg#c" alt="work_done"></p>
+<p>Part 2 of the series deals with the internal working of the services. In Part 3, we will discuss how we acquired logs and metrics, and how it actually builds your cloud with intelligent load distribution.</p>
+<p>You can find the project here: <a href="https://github.com/sdslabs/gasper">github.com/sdslabs/gasper</a>. If you happen to like it, a star on the repository is always welcome 😛.</p>
+
+
+    
+    
+        <div class="related">
+
+</div>
+    
+
+</div>
+
+
+        
+
+    </div>
+
+</section>
+
+
+
+<section class="section">
+  <div class="container">
+    <aside><div id="disqus_thread"></div></aside>
+  
+    <div id="show_comments"><a id="load_comments" class="button is-link">Load comments</a></div>
+  
+    <script type="text/javascript">
+      var disqus_shortname = 'shortname';
+      function disqus() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+  
+      
+      var hash = window.location.hash.substr(1);
+      if ((hash.length > 8) && (hash.substring(0, 8) === "comment-")) {
+        disqus();
+        document.getElementById("show_comments").style.display = "none";
+      } else {
+        document.getElementById('load_comments').onclick = function() {
+          disqus();
+          document.getElementById("show_comments").style.display = "none";
+        };
+      }
+  
+
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>© <a href="https://github.com/supra08">Supratik Das</a> 2020</p>
+    
+      <p>Powered by <a href="https://gohugo.io/">Hugo</a></p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+
