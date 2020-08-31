@@ -3,48 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/about/</loc>
-    <lastmod>2020-05-16T05:14:10+05:30</lastmod>
+    <loc>https://supratikdas.co/</loc>
+    <lastmod>2020-08-31T20:34:39+05:30</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2020-05-16T05:14:10+05:30</lastmod>
+    <loc>https://supratikdas.co/about/</loc>
+    <lastmod>2020-08-31T20:34:39+05:30</lastmod>
   </url>
   
   <url>
-    <loc>/blog/</loc>
-    <lastmod>2014-05-16T00:00:00+00:00</lastmod>
+    <loc>https://supratikdas.co/blog/</loc>
+    <lastmod>2020-08-31T20:34:39+05:30</lastmod>
   </url>
   
   <url>
-    <loc>/tags/cloud/</loc>
-    <lastmod>2014-05-16T00:00:00+00:00</lastmod>
+    <loc>https://supratikdas.co/blog/gasper-part-1/</loc>
+    <lastmod>2020-08-31T20:34:39+05:30</lastmod>
   </url>
   
   <url>
-    <loc>/blog/gasper-part-1/</loc>
-    <lastmod>2014-05-16T00:00:00+00:00</lastmod>
+    <loc>https://supratikdas.co/categories/</loc>
   </url>
   
   <url>
-    <loc>/tags/go/</loc>
-    <lastmod>2014-05-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/microservices/</loc>
-    <lastmod>2014-05-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/paas/</loc>
-    <lastmod>2014-05-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2014-05-16T00:00:00+00:00</lastmod>
+    <loc>https://supratikdas.co/tags/</loc>
   </url>
   
 </urlset>

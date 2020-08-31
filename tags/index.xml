@@ -2,50 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Supratik Das</title>
-    <link>/tags/</link>
+    <link>https://supratikdas.co/tags/</link>
     <description>Recent content in Tags on Supratik Das</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Fri, 16 May 2014 00:00:00 +0000</lastBuildDate>
+    <language>en-us</language>
+    <copyright>© {year}</copyright>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://supratikdas.co/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>cloud</title>
-      <link>/tags/cloud/</link>
-      <pubDate>Fri, 16 May 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/cloud/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>go</title>
-      <link>/tags/go/</link>
-      <pubDate>Fri, 16 May 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>microservices</title>
-      <link>/tags/microservices/</link>
-      <pubDate>Fri, 16 May 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/microservices/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>PaaS</title>
-      <link>/tags/paas/</link>
-      <pubDate>Fri, 16 May 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/paas/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>
