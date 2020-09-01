@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Supratik Das</title>
-    <link>https://supratikdas.co/categories/</link>
+    <link>https://supratikdas.com/categories/</link>
     <description>Recent content in Categories on Supratik Das</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© {year}</copyright>
     
-	<atom:link href="https://supratikdas.co/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://supratikdas.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
