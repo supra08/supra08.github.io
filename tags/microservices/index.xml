@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>microservices on Supratik Das</title>
+    <link>https://supratikdas.com/tags/microservices/</link>
+    <description>Recent content in microservices on Supratik Das</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© {year}</copyright>
+    <lastBuildDate>Mon, 31 Aug 2020 20:34:39 +0530</lastBuildDate>
+    
+	<atom:link href="https://supratikdas.com/tags/microservices/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gasper Part 1</title>
+      <link>https://supratikdas.com/blog/gasper-part-1/</link>
+      <pubDate>Mon, 31 Aug 2020 20:34:39 +0530</pubDate>
+      
+      <guid>https://supratikdas.com/blog/gasper-part-1/</guid>
+      <description>This blog is a cross post from the SDSLabs blog post and is Part 1 of a series. It gives an idea of Gasper’s architecture, technical stack, and capabilities. The subsequent parts cover the detailed discussion of its various components.*
+Introduction Providing simplicity without letting go of the necessities in deployments has always been a bottleneck for PaaS providers. Imagine you have a couple of Bare-Metal servers or Virtual Machines at your disposal (collectively called here as nodes) and you wanted to setup an application hosting service, such that the load is evenly distributed among all nodes.</description>
+    </item>
+    
+  </channel>
+</rss>

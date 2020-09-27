@@ -7,9 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© {year}</copyright>
+    <lastBuildDate>Mon, 31 Aug 2020 20:34:39 +0530</lastBuildDate>
     
 	<atom:link href="https://supratikdas.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>cloud</title>
+      <link>https://supratikdas.com/tags/cloud/</link>
+      <pubDate>Mon, 31 Aug 2020 20:34:39 +0530</pubDate>
+      
+      <guid>https://supratikdas.com/tags/cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>microservices</title>
+      <link>https://supratikdas.com/tags/microservices/</link>
+      <pubDate>Mon, 31 Aug 2020 20:34:39 +0530</pubDate>
+      
+      <guid>https://supratikdas.com/tags/microservices/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PaaS</title>
+      <link>https://supratikdas.com/tags/paas/</link>
+      <pubDate>Mon, 31 Aug 2020 20:34:39 +0530</pubDate>
+      
+      <guid>https://supratikdas.com/tags/paas/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
