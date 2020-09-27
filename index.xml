@@ -13,9 +13,20 @@
     
     
     <item>
+      <title>Projects</title>
+      <link>https://supratikdas.com/projects/</link>
+      <pubDate>Fri, 25 Sep 2020 20:34:39 +0530</pubDate>
+      
+      <guid>https://supratikdas.com/projects/</guid>
+      <description>Hello there!
+Oops nothing here :/ Projects are coming soon&amp;hellip;
+Till then check out my blog posts and my resume.</description>
+    </item>
+    
+    <item>
       <title>About</title>
       <link>https://supratikdas.com/about/</link>
-      <pubDate>Fri, 25 Sep 2020 20:34:39 +0530</pubDate>
+      <pubDate>Mon, 31 Aug 2020 20:34:39 +0530</pubDate>
       
       <guid>https://supratikdas.com/about/</guid>
       <description>Hello there!
@@ -30,17 +41,6 @@ I am a 3rd year student at Indian Institute of Technology, Roorkee, pursuing my 
       <guid>https://supratikdas.com/blog/gasper-part-1/</guid>
       <description>This blog is a cross post from the SDSLabs blog post and is Part 1 of a series. It gives an idea of Gasper’s architecture, technical stack, and capabilities. The subsequent parts cover the detailed discussion of its various components.*
 Introduction Providing simplicity without letting go of the necessities in deployments has always been a bottleneck for PaaS providers. Imagine you have a couple of Bare-Metal servers or Virtual Machines at your disposal (collectively called here as nodes) and you wanted to setup an application hosting service, such that the load is evenly distributed among all nodes.</description>
-    </item>
-    
-    <item>
-      <title>Projects</title>
-      <link>https://supratikdas.com/projects/</link>
-      <pubDate>Mon, 31 Aug 2020 20:34:39 +0530</pubDate>
-      
-      <guid>https://supratikdas.com/projects/</guid>
-      <description>Hello there!
-Projects are coming soon&amp;hellip;
-Till then check out my blog posts and my resume.</description>
     </item>
     
   </channel>
