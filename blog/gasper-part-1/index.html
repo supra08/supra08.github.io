@@ -67,7 +67,7 @@
       "datePublished": "2020-08-31 20:34:39 \u002b0530 IST",
       "dateModified" : "2020-08-31 20:34:39 \u002b0530 IST",
       "url" : "https:\/\/supratikdas.com\/blog\/gasper-part-1\/",
-      "wordCount" : "1035",
+      "wordCount" : "1034",
       "keywords" : ["Blog"]
     }
   
@@ -176,7 +176,7 @@ But we wanted to get rid of that nasty Dockerfile and the docker-compose heavy l
 <h4 id="go-go-go-making-thy-wrk-easy">Go, go, go… making thy w&rsquo;rk easy</h4>
 <p>Go, besides the fact that it came from Google, is famous for its efficient realization of concurrency using <a href="https://golangbot.com/goroutines/">Goroutines</a>. And there it was, we took the two slowest processes, steps 1 and 4, and put them in goroutines. The deployment times came down from ~15s to ~5.5s. Further optimizations pulled it down to 1.5s. Phew! That was fast.</p>
 <h2 id="the-final-take">The final take:<a class="anchor" href="#the-final-take">#</a></h2>
-<p>The next we have <strong>Enrai</strong>, the reverse proxy server. Among all the services, only Enrai is given a public IP and the rest of the apps are proxied through it. Laying it down simply, it is <em>a server that receives requests from clients and forwards them to the respective instances</em> (containers in our case). \<br>
+<p>The next we have <strong>Enrai</strong>, the reverse proxy server. Among all the services, only Enrai is given a public IP and the rest of the apps are proxied through it. Laying it down simply, it is <em>a server that receives requests from clients and forwards them to the respective instances</em> (containers in our case).<br>
 Gasper boasts an internal DNS resolution service, too, <strong>Hikari</strong>. It allots domain names to the apps and databases and maintains the DNS records, ensuring an even distribution.\</p>
 <p>A lot things coming up altogether? This diagram might ease out things:
 <img src="/posts/gasper-part-1/request-proxy.png" alt="request_proxy"></p>
@@ -206,6 +206,11 @@ Gasper boasts an internal DNS resolution service, too, <strong>Hikari</strong>. 
  <div class="pagination">
   
 
+  
+    <a class="pagination__item" href="https://supratikdas.com/blog/gsoc-2020-final-report/">
+      <span class="pagination__label">Next Post</span>
+      <span class="pagination__title" >GSOC 2020 Final Assessment - CD Foundation [Screwdriver.cd]</a>
+    </a>
   
 </div>
 

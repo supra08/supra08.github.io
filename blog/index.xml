@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© {year}</copyright>
-    <lastBuildDate>Mon, 31 Aug 2020 20:34:39 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2020 04:05:35 +0530</lastBuildDate>
     
 	<atom:link href="https://supratikdas.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GSOC 2020 Final Assessment - CD Foundation [Screwdriver.cd]</title>
+      <link>https://supratikdas.com/blog/gsoc-2020-final-report/</link>
+      <pubDate>Tue, 29 Sep 2020 04:05:35 +0530</pubDate>
+      
+      <guid>https://supratikdas.com/blog/gsoc-2020-final-report/</guid>
+      <description>GSOC 2020 had been a wonderful experience where I got to work on really interesting projects and tasks. Firstly, I would like to thank my mentors, Jithin Emmanuel and Tiffany Kyi for all the technical help, clearing roadblocks and important decision-making throughout the project, both before and during the programme. The same goes to all the PR reviewers from the organization for giving useful insights in the task.
+For GSOC, there were two projects to be taken up:</description>
+    </item>
     
     <item>
       <title>Gasper Part 1</title>

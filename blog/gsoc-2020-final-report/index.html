@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>GSOC 2020 Final Assessment - CD Foundation [Screwdriver.cd] | Supratik Das</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="The final report for the GSOC 2020 project with Screwdriver.cd">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="GSOC 2020 Final Assessment - CD Foundation [Screwdriver.cd]" />
+  <meta name="twitter:description" content="The final report for the GSOC 2020 project with Screwdriver.cd"/>
+  <meta name="twitter:site" content="https://twitter.com/supradeux" />
+  <meta name="twitter:creator" content="https://twitter.com/supradeux" />
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.490cd328f640f278414829345ec64ffccd9e4682cc1578dba5a99e7b5a9453f4.css" integrity="sha256-SQzTKPZA8nhBSCk0XsZP/M2eRoLMFXjbpamee1qUU/Q="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/supratikdas.com\/"
+      },
+      "articleSection" : "blog",
+      "name" : "GSOC 2020 Final Assessment - CD Foundation [Screwdriver.cd]",
+      "headline" : "GSOC 2020 Final Assessment - CD Foundation [Screwdriver.cd]",
+      "description" : "The final report for the GSOC 2020 project with Screwdriver.cd",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2020",
+      "datePublished": "2020-09-29 04:05:35 \u002b0530 IST",
+      "dateModified" : "2020-09-29 04:05:35 \u002b0530 IST",
+      "url" : "https:\/\/supratikdas.com\/blog\/gsoc-2020-final-report\/",
+      "wordCount" : "705",
+      "keywords" : ["Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+  
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/about">about</a>
+      </li>
+    
+      <li>
+        <a  class="active"
+         href="/blog">blog</a>
+      </li>
+    
+      <li>
+        <a  href="/">home</a>
+      </li>
+    
+      <li>
+        <a  href="/projects">projects</a>
+      </li>
+    
+      <li>
+        <a  href="/resume.pdf">resume</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">GSOC 2020 Final Assessment - CD Foundation [Screwdriver.cd]</h1>
+            <time datetime="2020-09-29 04:05:35 &#43;0530 IST" class="post__date">Sep 29 2020</time> 
+          </header>
+          <article class="post__content">
+              
+<p>GSOC 2020 had been a wonderful experience where I got to work on really interesting projects and tasks. Firstly, I would like to thank my mentors, <a href="github.com/jithine">Jithin Emmanuel</a> and <a href="https://github.com/tkyi/">Tiffany Kyi</a> for all the technical help, clearing roadblocks and important decision-making throughout the project, both before and during the programme. The same goes to all the PR reviewers from the organization for giving useful insights in the task.</p>
+<p>For GSOC, there were <strong>two projects</strong> to be taken up:</p>
+<ul>
+<li><strong>Generate and use deploy keys</strong>  <a href="https://github.com/screwdriver-cd/screwdriver/issues/1079">Issue link</a>:
+Previously, for building the projects Screwdriver either needed the repos to have public access or required the SCM Tokens to be added as a configuration. For private repositories, the SCM tokens gave user wide access that is not always desirable. In this case, <strong>Deploy Keys</strong> is a better option that would only give repository wide access.
+This project required the inclusion of optional generation and addition of the keys and use them for checkouts.</li>
+<li><strong>Notify SCM changes from external SCM repositories</strong> <a href="https://github.com/screwdriver-cd/screwdriver/issues/1415">Issue link</a>:
+Previously Screwdriver only supported addition of webhooks to the source repositories. This project required the addition of support to add webhooks to external repositories and trigger jobs which have specifically subscribed to them.</li>
+</ul>
+<h2 id="work-summary">Work Summary<a class="anchor" href="#work-summary">#</a></h2>
+<p>Milestones achieved:</p>
+<ul>
+<li>Generate and use deploy keys in pipeline build mechanism.
+<ul>
+<li>Implementation of 2 flows:
+<ul>
+<li>Manual generation of the keys by user and addtion to the pipeline and SCM Repo.</li>
+<li>Automatic generation and addtion of public key to the repo with <strong>Github-API</strong> as well as addition of private key as a secret. Second level validation to activate this is setting a flag in the API config and UI.</li>
+</ul>
+</li>
+<li>Unit Tests and Feature tests for all the features.</li>
+</ul>
+</li>
+<li>Notification from external SCM repositories:
+<ul>
+<li>Refactor to add webhooks to <strong>multiple repos</strong> with custom events.</li>
+<li>Add logic to fetch <strong>triggered pipelines</strong> from the datastore during subscribed hook events.</li>
+<li>Add logic to <strong>select and trigger specific subscribed jobs</strong> during subscribed hook events.</li>
+</ul>
+</li>
+</ul>
+<h3 id="pull-requests">Pull Requests<a class="anchor" href="#pull-requests">#</a></h3>
+<ul>
+<li>
+<p>Generation and use of Deploy Keys <a href="https://github.com/screwdriver-cd/screwdriver/issues/1079">Issue link</a>:</p>
+<ul>
+<li>Implement handling and checkout with deploy keys: <a href="https://github.com/screwdriver-cd/scm-github/pull/159">https://github.com/screwdriver-cd/scm-github/pull/159</a></li>
+<li>Auto keypair generation and auto pushing public key to SCM: <a href="https://github.com/screwdriver-cd/scm-github/pull/163">https://github.com/screwdriver-cd/scm-github/pull/163</a></li>
+<li>Add addDeployKey method to scm-router: <a href="https://github.com/screwdriver-cd/scm-router/pull/23">https://github.com/screwdriver-cd/scm-router/pull/23</a></li>
+<li>Add addDeployKey method to scm-base: <a href="https://github.com/screwdriver-cd/scm-base/pull/79">https://github.com/screwdriver-cd/scm-base/pull/79</a></li>
+<li>Add relevant fields in the schemas: <a href="https://github.com/screwdriver-cd/data-schema/pull/404">https://github.com/screwdriver-cd/data-schema/pull/404</a></li>
+<li>Add autoDeployKeysGenerationEnabled in scm-router: <a href="https://github.com/screwdriver-cd/scm-router/pull/24">https://github.com/screwdriver-cd/scm-router/pull/24</a></li>
+<li>Validation check in the UI: <a href="https://github.com/screwdriver-cd/ui/pull/568">https://github.com/screwdriver-cd/ui/pull/568</a></li>
+<li>Final integration in the API: <a href="https://github.com/screwdriver-cd/screwdriver/pull/2157">https://github.com/screwdriver-cd/screwdriver/pull/2157</a></li>
+<li>Refactors in the scm-github module: <a href="https://github.com/screwdriver-cd/scm-github/pull/168">https://github.com/screwdriver-cd/scm-github/pull/168</a></li>
+<li>Refactor in the scm-base to return non-promise value: <a href="https://github.com/screwdriver-cd/scm-base/pull/81">https://github.com/screwdriver-cd/scm-base/pull/81</a></li>
+<li>Refactor in the scm-router to return non-promise value: <a href="https://github.com/screwdriver-cd/scm-router/pull/25">https://github.com/screwdriver-cd/scm-router/pull/25</a></li>
+<li>Fix request scope format in scm-github: <a href="https://github.com/screwdriver-cd/scm-github/pull/169">https://github.com/screwdriver-cd/scm-github/pull/169</a></li>
+<li>Implement auto-secret-addition in the model: <a href="https://github.com/screwdriver-cd/models/pull/471">https://github.com/screwdriver-cd/models/pull/471</a></li>
+<li>Enable to auto-upgradation to ssh-based checkout: <a href="https://github.com/screwdriver-cd/scm-github/pull/171">https://github.com/screwdriver-cd/scm-github/pull/171</a></li>
+<li>Set allow-in-PR true for deploy key secret: <a href="https://github.com/screwdriver-cd/screwdriver/pull/2176">https://github.com/screwdriver-cd/screwdriver/pull/2176</a></li>
+<li>Allow autoKeysGeneration flag in the update endpoint schema: <a href="https://github.com/screwdriver-cd/data-schema/pull/407">https://github.com/screwdriver-cd/data-schema/pull/407</a></li>
+<li>[WIP] Implementation of data-driven feature test to test the deploy key feature: <a href="https://github.com/screwdriver-cd/screwdriver/pull/2158">https://github.com/screwdriver-cd/screwdriver/pull/2158</a></li>
+<li>Update the docs with the deploy keys feature: <a href="https://github.com/screwdriver-cd/guide/pull/401">https://github.com/screwdriver-cd/guide/pull/401</a>
+The feature is officially out and published here: <a href="https://blog.screwdriver.cd/post/626369335636656128/latest-product-updates">https://blog.screwdriver.cd/post/626369335636656128/latest-product-updates</a></li>
+</ul>
+</li>
+<li>
+<p>Notification from external SCM repositories <a href="https://github.com/screwdriver-cd/screwdriver/issues/1415">https://github.com/screwdriver-cd/screwdriver/issues/1415</a>:</p>
+<ul>
+<li>Add fields for the updated screwdriver and model config in the schema: <a href="https://github.com/screwdriver-cd/data-schema/pull/408">https://github.com/screwdriver-cd/data-schema/pull/408</a></li>
+<li>Add subscribed field in the parsed config: <a href="https://github.com/screwdriver-cd/config-parser/pull/109">https://github.com/screwdriver-cd/config-parser/pull/109</a></li>
+<li>Add feature to handle custom events in scm-github: <a href="https://github.com/screwdriver-cd/scm-github/pull/174">https://github.com/screwdriver-cd/scm-github/pull/174</a></li>
+<li>Add handlers for subscribed repos, modify addWebhook for multiple URLs and alternate paths for subscribed hook events: <a href="https://github.com/screwdriver-cd/models/pull/472">https://github.com/screwdriver-cd/models/pull/472</a></li>
+<li>Final API integration and logic to handle external hook notifications: <a href="https://github.com/screwdriver-cd/screwdriver/pull/2187">https://github.com/screwdriver-cd/screwdriver/pull/2187</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="pre-gsoc-work">Pre GSOC work:<a class="anchor" href="#pre-gsoc-work">#</a></h3>
+<ul>
+<li>Allow editing of existing PR comments by bot: <a href="https://github.com/screwdriver-cd/scm-github/pull/152">https://github.com/screwdriver-cd/scm-github/pull/152</a></li>
+<li>Config validation for slack settings: <a href="https://github.com/screwdriver-cd/notifications-email/pull/21">https://github.com/screwdriver-cd/notifications-email/pull/21</a>, <a href="https://github.com/screwdriver-cd/notifications-slack/pull/25">https://github.com/screwdriver-cd/notifications-slack/pull/25</a></li>
+</ul>
+<h2 id="conclusion">Conclusion<a class="anchor" href="#conclusion">#</a></h2>
+<p>I feel I&rsquo;ve have completed almost all of the goals mentioned in the PR. The <strong>Generation and use of Deploy Keys</strong> PRs are all merged and the feature has been published. For the <strong>Notification from external SCM repositories</strong>, all of the PRs have been made and some have been approved. The feature tests are the ones that are left in the implementation and are in WIP. But those being similar to lot of existing tests can be easily added.</p>
+<h2 id="future-work">Future Work<a class="anchor" href="#future-work">#</a></h2>
+<p>A couple of enhancements were discussed to be added to both the products and were decided to be taken up as secondary goals. Some of them were:</p>
+<ul>
+<li>Implement <strong>rotation</strong> of deploy keys that would require enabling of storage of the keys in the data store in a secure way.</li>
+<li>Add <strong>label based selector</strong> of jobs that would subscribe to external pipelines.</li>
+</ul>
+
+
+              
+          </article>
+          
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="https://supratikdas.com/blog/gasper-part-1/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">Gasper Part 1</span>
+    </a>
+  
+
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a class="social-icons__link" title="Twitter"
+         href="https://twitter.com/supradeux"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://supratikdas.com/svg/twitter.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" title="GitHub"
+         href="https://github.com/supra08"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://supratikdas.com/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" title="Email"
+         href="mailto:rick.das08@gmail.com"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://supratikdas.com/svg/email.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" title="LinkedIn"
+         href="https://www.linkedin.com/in/supratik-das-008/"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://supratikdas.com/svg/linkedin.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© 2020</p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+    
+
+  </main>
+  
+
+   
+
+  
+  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+  <script src="https://utteranc.es/client.js"
+    repo="supra08/supra08.github.io"
+    issue-term="title"
+    label="comment"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+
+
+</body>
+
+</html>
